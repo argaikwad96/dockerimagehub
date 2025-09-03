@@ -49,7 +49,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .          # 👈 fixed (look for Dockerfile in repo root)
-          file: ./Dockerfile  # 👈 ensure file path is correct
+          file: ./DockerFile  # 👈 ensure file path is correct
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest
 
